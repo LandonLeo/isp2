@@ -69,6 +69,7 @@ public enum ColorPair : uint {
     Warning,
     Error,
     Grass,
+    Grass2,
     Dirt,
     Stone,
     Mana,
@@ -81,6 +82,7 @@ public enum Highlight {
     TextWarning,
     TextError,
     Grass,
+    Grass2,
     Dirt,
     Stone,
     Mana,
@@ -155,6 +157,7 @@ public static class ColorHandler {
         [ Color.Yellow,     Color.TextBg     ], // Error
         [ Color.Red,        Color.TextBg     ], // Warning
         [ Color.LightGreen, Color.LightGreen ], // Grass
+        [ Color.Green,      Color.Green      ], // Grass2
         [ Color.DarkRed,    Color.DarkRed    ], // Dirt
         [ Color.Gray50,     Color.Gray50     ], // Stone
         [ Color.DarkBlue,   Color.TextBg     ], // Mana
@@ -167,6 +170,7 @@ public static class ColorHandler {
         { Highlight.TextWarning,      (ColorPair.Warning, 0 )},
         { Highlight.TextError,        (ColorPair.Error,   0 )},
         { Highlight.Grass,            (ColorPair.Grass,   0 )},
+        { Highlight.Grass2,            (ColorPair.Grass2,   0 )},
         { Highlight.Dirt,             (ColorPair.Dirt,    0 )},
         { Highlight.Stone,            (ColorPair.Stone,   0 )},
         { Highlight.Mana,             (ColorPair.Mana,    0 )}
