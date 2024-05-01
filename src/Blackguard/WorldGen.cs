@@ -13,10 +13,11 @@ public class WorldGen {
     }
 
     public Chunk GenChunk(Point position) {
+        for (int k = 0; k < 10; k++) {
         Chunk ret = new(position);
 
         // TODO: Actual noise-based worldgen
-        if (rand.NextDouble() < .2) {
+        if (rand.NextSingle() < .2) {
         for (int i = 0; i < Chunk.CHUNKSIZE; i++) {
             for (int j = 0; j < Chunk.CHUNKSIZE; j++) {
                 if ((position.X + position.Y) % 2 == 0)
@@ -25,7 +26,7 @@ public class WorldGen {
                     ret.Tiles[i, j] = new Tile(Registry.GetDefinition<Snow2>(), false);
             }
         }
-        } else if (rand.NextDouble() < .4) {
+        } else if (rand.NextSingle() < .4) {
             for (int i = 0; i < Chunk.CHUNKSIZE; i++) {
             for (int j = 0; j < Chunk.CHUNKSIZE; j++) {
                 if ((position.X + position.Y) % 2 == 0)
@@ -34,7 +35,7 @@ public class WorldGen {
                     ret.Tiles[i, j] = new Tile(Registry.GetDefinition<Waste2>(), false);
             }
         }
-        } else if (rand.NextDouble() < .6) {
+        } else if (rand.NextSingle() < .6) {
             for (int i = 0; i < Chunk.CHUNKSIZE; i++) {
             for (int j = 0; j < Chunk.CHUNKSIZE; j++) {
                 if ((position.X + position.Y) % 2 == 0)
@@ -43,7 +44,7 @@ public class WorldGen {
                     ret.Tiles[i, j] = new Tile(Registry.GetDefinition<Grass2>(), false);
             }
         }
-        } else if (rand.NextDouble() < .8) {
+        } else if (rand.NextSingle() < .8) {
             for (int i = 0; i < Chunk.CHUNKSIZE; i++) {
             for (int j = 0; j < Chunk.CHUNKSIZE; j++) {
                 if ((position.X + position.Y) % 2 == 0)
@@ -52,7 +53,7 @@ public class WorldGen {
                     ret.Tiles[i, j] = new Tile(Registry.GetDefinition<Sand2>(), false);
             }
         }
-        } else if (rand.NextDouble() < 1) {
+        } else {
             for (int i = 0; i < Chunk.CHUNKSIZE; i++) {
             for (int j = 0; j < Chunk.CHUNKSIZE; j++) {
                 if ((position.X + position.Y) % 2 == 0)
@@ -71,5 +72,7 @@ public class WorldGen {
         }
 
         return ret;
+    }
+#pragma warning restore CS0162 // Unreachable code detected
     }
 }
