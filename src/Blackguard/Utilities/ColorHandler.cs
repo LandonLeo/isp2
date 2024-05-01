@@ -24,7 +24,7 @@ public enum Color : short {
     Black,
 
     Red,
-    RedOrange,
+    Rorange,
     Orange,
     Yellow,
     Yuck,
@@ -37,7 +37,7 @@ public enum Color : short {
     Pink,
 
     LightRed,
-    LightRedOrange,
+    LightRorange,
     LightOrange,
     LightYellow,
     LightYuck,
@@ -178,10 +178,10 @@ public static class ColorHandler {
         [ Color.Yellow,        Color.Yellow         ], // Sand2
         [ Color.White,         Color.White          ], // Snow
         [ Color.Gray90,        Color.Gray90         ], // Snow2
-        [ Color.LightYuck,     Color.LightYuck      ], // Waste
-        [ Color.Yuck,          Color.Yuck           ], // Waste2
-        [ Color.LightRedOrange,Color.LightRedOrange ], // Lava
-        [ Color.RedOrange,     Color.RedOrange      ], // Lava2
+        [ Color.DarkRorange,   Color.DarkRorange    ], // Waste
+        [ Color.DarkRed,       Color.DarkRed     ], // Waste2
+        [ Color.LightRorange,  Color.LightRorange   ], // Lava
+        [ Color.Rorange,       Color.Rorange        ], // Lava2
         [ Color.DarkRed,       Color.DarkRed        ], // Dirt
         [ Color.Gray50,        Color.Gray50         ], // Stone
         [ Color.DarkBlue,      Color.TextBg         ], // Mana
