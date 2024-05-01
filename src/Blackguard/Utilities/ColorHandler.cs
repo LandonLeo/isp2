@@ -70,6 +70,14 @@ public enum ColorPair : uint {
     Error,
     Grass,
     Grass2,
+    Sand,
+    Sand2,
+    Snow,
+    Snow2,
+    Waste,
+    Waste2,
+    Lava,
+    Lava2,
     Dirt,
     Stone,
     Mana,
@@ -83,6 +91,14 @@ public enum Highlight {
     TextError,
     Grass,
     Grass2,
+    Sand,
+    Sand2,
+    Snow,
+    Snow2,
+    Waste,
+    Waste2,
+    Lava,
+    Lava2,
     Dirt,
     Stone,
     Mana,
@@ -152,15 +168,23 @@ public static class ColorHandler {
     ];
 
     public static readonly Color[][] ColorPairDefs = [
-        [ Color.TextFg,     Color.TextBg     ], // Text
-        [ Color.TextBg,     Color.TextFg     ], // TextSel
-        [ Color.Yellow,     Color.TextBg     ], // Error
-        [ Color.Red,        Color.TextBg     ], // Warning
-        [ Color.LightGreen, Color.LightGreen ], // Grass
-        [ Color.Green,      Color.Green      ], // Grass2
-        [ Color.DarkRed,    Color.DarkRed    ], // Dirt
-        [ Color.Gray50,     Color.Gray50     ], // Stone
-        [ Color.DarkBlue,   Color.TextBg     ], // Mana
+        [ Color.TextFg,        Color.TextBg         ], // Text
+        [ Color.TextBg,        Color.TextFg         ], // TextSel
+        [ Color.Yellow,        Color.TextBg         ], // Error
+        [ Color.Red,           Color.TextBg         ], // Warning
+        [ Color.LightGreen,    Color.LightGreen     ], // Grass
+        [ Color.Green,         Color.Green          ], // Grass2
+        [ Color.LightYellow,   Color.LightYellow    ], // Sand
+        [ Color.Yellow,        Color.Yellow         ], // Sand2
+        [ Color.White,         Color.White          ], // Snow
+        [ Color.Gray90,        Color.Gray90         ], // Snow2
+        [ Color.LightYellow,   Color.LightYuck      ], // Waste
+        [ Color.Yuck,          Color.Yuck           ], // Waste2
+        [ Color.LightRedOrange,Color.LightRedOrange ], // Lava
+        [ Color.RedOrange,     Color.RedOrange      ], // Lava2
+        [ Color.DarkRed,       Color.DarkRed        ], // Dirt
+        [ Color.Gray50,        Color.Gray50         ], // Stone
+        [ Color.DarkBlue,      Color.TextBg         ], // Mana
     ];
 
     public static readonly Dictionary<Highlight, (ColorPair pair, uint attr)> HighlightDefs = new() {
@@ -170,7 +194,15 @@ public static class ColorHandler {
         { Highlight.TextWarning,      (ColorPair.Warning, 0 )},
         { Highlight.TextError,        (ColorPair.Error,   0 )},
         { Highlight.Grass,            (ColorPair.Grass,   0 )},
-        { Highlight.Grass2,            (ColorPair.Grass2,   0 )},
+        { Highlight.Grass2,           (ColorPair.Grass2,  0 )},
+        { Highlight.Sand,             (ColorPair.Sand,    0 )},
+        { Highlight.Sand2,            (ColorPair.Sand2,   0 )},
+        { Highlight.Snow,             (ColorPair.Snow,    0 )},
+        { Highlight.Snow2,            (ColorPair.Snow2,   0 )},
+        { Highlight.Waste,            (ColorPair.Waste,   0 )},
+        { Highlight.Waste2,           (ColorPair.Waste2,  0 )},
+        { Highlight.Lava,             (ColorPair.Lava,    0 )},
+        { Highlight.Lava2,            (ColorPair.Lava2,   0 )},
         { Highlight.Dirt,             (ColorPair.Dirt,    0 )},
         { Highlight.Stone,            (ColorPair.Stone,   0 )},
         { Highlight.Mana,             (ColorPair.Mana,    0 )}
