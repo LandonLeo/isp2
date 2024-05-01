@@ -13,7 +13,6 @@ public class WorldGen {
     }
 
     public Chunk GenChunk(Point position) {
-        for (int k = 0; k < 10; k++) {
         Chunk ret = new(position);
 
         // TODO: Actual noise-based worldgen
@@ -72,7 +71,5 @@ public class WorldGen {
         }
 
         return ret;
-    }
-#pragma warning restore CS0162 // Unreachable code detected
     }
 }
