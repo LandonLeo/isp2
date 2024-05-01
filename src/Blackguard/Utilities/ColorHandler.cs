@@ -178,7 +178,7 @@ public static class ColorHandler {
         [ Color.Yellow,        Color.Yellow         ], // Sand2
         [ Color.White,         Color.White          ], // Snow
         [ Color.Gray90,        Color.Gray90         ], // Snow2
-        [ Color.LightYellow,   Color.LightYuck      ], // Waste
+        [ Color.LightYuck,     Color.LightYuck      ], // Waste
         [ Color.Yuck,          Color.Yuck           ], // Waste2
         [ Color.LightRedOrange,Color.LightRedOrange ], // Lava
         [ Color.RedOrange,     Color.RedOrange      ], // Lava2
