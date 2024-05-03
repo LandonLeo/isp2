@@ -22,16 +22,16 @@ public class WorldGen {
                 if ((position.X + position.Y) % 2 == 0)
                     ret.Tiles[i, j] = new Tile(Registry.GetDefinition<Snow>(), false);
                 else
-                    ret.Tiles[i, j] = new Tile(Registry.GetDefinition<Snow2>(), false);
+                    ret.Tiles[i, j] = new Tile(Registry.GetDefinition<SnowDark>(), false);
             }
         }
         } else if (rand.NextSingle() < .4) {
             for (int i = 0; i < Chunk.CHUNKSIZE; i++) {
             for (int j = 0; j < Chunk.CHUNKSIZE; j++) {
                 if ((position.X + position.Y) % 2 == 0)
-                    ret.Tiles[i, j] = new Tile(Registry.GetDefinition<Waste>(), false);
+                    ret.Tiles[i, j] = new Tile(Registry.GetDefinition<MagicWaste>(), false);
                 else
-                    ret.Tiles[i, j] = new Tile(Registry.GetDefinition<Waste2>(), false);
+                    ret.Tiles[i, j] = new Tile(Registry.GetDefinition<MagicWasteDark>(), false);
             }
         }
         } else if (rand.NextSingle() < .6) {
@@ -40,7 +40,7 @@ public class WorldGen {
                 if ((position.X + position.Y) % 2 == 0)
                     ret.Tiles[i, j] = new Tile(Registry.GetDefinition<Grass>(), false);
                 else
-                    ret.Tiles[i, j] = new Tile(Registry.GetDefinition<Grass2>(), false);
+                    ret.Tiles[i, j] = new Tile(Registry.GetDefinition<GrassDark>(), false);
             }
         }
         } else if (rand.NextSingle() < .8) {
@@ -49,25 +49,28 @@ public class WorldGen {
                 if ((position.X + position.Y) % 2 == 0)
                     ret.Tiles[i, j] = new Tile(Registry.GetDefinition<Sand>(), false);
                 else
-                    ret.Tiles[i, j] = new Tile(Registry.GetDefinition<Sand2>(), false);
+                    ret.Tiles[i, j] = new Tile(Registry.GetDefinition<SandDark>(), false);
             }
         }
         } else {
             for (int i = 0; i < Chunk.CHUNKSIZE; i++) {
             for (int j = 0; j < Chunk.CHUNKSIZE; j++) {
-                if ((position.X + position.Y) % 2 == 0)
-                    ret.Tiles[i, j] = new Tile(Registry.GetDefinition<Lava>(), false);
-                else
-                    ret.Tiles[i, j] = new Tile(Registry.GetDefinition<Lava2>(), false);
-            }
-        }
-        }
+                if ((position.X + position.Y) % 2 == 0) {
+                    ret.Tiles[i, j] = new Tile(Registry.GetDefinition<VolcanoStone>(), false);
 
-        while (rand.NextSingle() > 0.5) {
+                    while (rand.NextSingle() > 0.5) {
             int cx = (int)(rand.NextSingle() * Chunk.CHUNKSIZE);
             int cy = (int)(rand.NextSingle() * Chunk.CHUNKSIZE);
 
-            ret.Tiles[cx, cy] = new Tile(Registry.GetDefinition<Stone>(), true);
+            ret.Tiles[cx, cy] = new Tile(Registry.GetDefinition<Lava>(), true);
+        }
+
+                }else
+                    ret.Tiles[i, j] = new Tile(Registry.GetDefinition<VolcanoStoneDark>(), false);
+            }
+        }
+        
+        
         }
 
         return ret;

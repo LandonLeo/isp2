@@ -2,10 +2,10 @@ using Blackguard.Utilities;
 
 namespace Blackguard.Tiles;
 
-public class Lava2 : TileDefinition {
-    public Lava2() {
+public class LavaDark : TileDefinition {
+    public LavaDark() {
         Name = "Lava2";
         Glyph = '#';
-        Highlight = Highlight.Lava2;
+        Highlight = Highlight.LavaDark;
     }
 }
