@@ -5,7 +5,7 @@ namespace Blackguard.Tiles;
 public class IceDark : TileDefinition {
     public IceDark() {
         Name = "IceDark";
-        Glyph = '^';
+        Glyph = 'o';
         Highlight = Highlight.IceDark;
     }
 }
