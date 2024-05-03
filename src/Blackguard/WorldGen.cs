@@ -62,6 +62,13 @@ public class WorldGen {
                     ret.Tiles[i, j] = new Tile(Registry.GetDefinition<VolcanoStoneDark>(), false);
             }
         }
+
+        while (rand.NextSingle() > 0.5) {
+            int cx = (int)(rand.NextSingle() * Chunk.CHUNKSIZE);
+            int cy = (int)(rand.NextSingle() * Chunk.CHUNKSIZE);
+
+            ret.Tiles[cx, cy] = new Tile(Registry.GetDefinition<Stone>(), true);
+        }
         
         
         }
