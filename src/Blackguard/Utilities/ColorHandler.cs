@@ -327,105 +327,105 @@ public static class ColorHandler {
     ];
 
     public static readonly Color[][] ColorPairDefs = [
-        [ Color.TextFg,               Color.TextBg     ], // Text
-        [ Color.TextBg,               Color.TextFg     ], // TextSel
-        [ Color.Red,                  Color.TextBg     ], // Warning
-        [ Color.TextBg,               Color.Red        ], // WarningSel
-        [ Color.Yellow,               Color.TextBg     ], // Error
-        [ Color.TextBright,           Color.TextBg     ], // Bold
-        [ Color.TextBg,               Color.TextBright ], // BoldSel
-        [ Color.TextQuieter,          Color.TextBg     ], // Dim
-        [ Color.TextQuietest,         Color.TextBg     ], // Hidden
-        [ Color.White,                Color.TextBg     ], // White
-        [ Color.Gray70,               Color.TextBg     ], // LightGray
-        [ Color.Gray30,               Color.TextBg     ], // DarkGray
-        [ Color.Black,                Color.TextBg     ], // Black
-        [ Color.Red,                  Color.TextBg     ], // EmphasisRed
-        [ Color.Green,                Color.TextBg     ], // EmphasisGreen
-        [ Color.Blue,                 Color.TextBg     ], // EmphasisBlue
-        [ Color.Red,                  Color.TextBg     ], // Red
-        [ Color.RedOrange,            Color.TextBg     ], // RedOrange
-        [ Color.Orange,               Color.TextBg     ], // Orange
-        [ Color.Yellow,               Color.TextBg     ], // Yellow
-        [ Color.Yuck,                 Color.TextBg     ], // Yuck
-        [ Color.Green,                Color.TextBg     ], // Green
-        [ Color.Teal,                 Color.TextBg     ], // Teal
-        [ Color.Blue,                 Color.TextBg     ], // Blue
-        [ Color.DeepBlue,             Color.TextBg     ], // DeepBlue
-        [ Color.Purple,               Color.TextBg     ], // Purple
-        [ Color.Magenta,              Color.TextBg     ], // Magenta
-        [ Color.Pink,                 Color.TextBg     ], // Pink
+        [ Color.TextFg,               Color.TextBg              ], // Text
+        [ Color.TextBg,               Color.TextFg              ], // TextSel
+        [ Color.Red,                  Color.TextBg              ], // Warning
+        [ Color.TextBg,               Color.Red                 ], // WarningSel
+        [ Color.Yellow,               Color.TextBg              ], // Error
+        [ Color.TextBright,           Color.TextBg              ], // Bold
+        [ Color.TextBg,               Color.TextBright          ], // BoldSel
+        [ Color.TextQuieter,          Color.TextBg              ], // Dim
+        [ Color.TextQuietest,         Color.TextBg              ], // Hidden
+        [ Color.White,                Color.TextBg              ], // White
+        [ Color.Gray70,               Color.TextBg              ], // LightGray
+        [ Color.Gray30,               Color.TextBg              ], // DarkGray
+        [ Color.Black,                Color.TextBg              ], // Black
+        [ Color.Red,                  Color.TextBg              ], // EmphasisRed
+        [ Color.Green,                Color.TextBg              ], // EmphasisGreen
+        [ Color.Blue,                 Color.TextBg              ], // EmphasisBlue
+        [ Color.Red,                  Color.TextBg              ], // Red
+        [ Color.RedOrange,            Color.TextBg              ], // RedOrange
+        [ Color.Orange,               Color.TextBg              ], // Orange
+        [ Color.Yellow,               Color.TextBg              ], // Yellow
+        [ Color.Yuck,                 Color.TextBg              ], // Yuck
+        [ Color.Green,                Color.TextBg              ], // Green
+        [ Color.Teal,                 Color.TextBg              ], // Teal
+        [ Color.Blue,                 Color.TextBg              ], // Blue
+        [ Color.DeepBlue,             Color.TextBg              ], // DeepBlue
+        [ Color.Purple,               Color.TextBg              ], // Purple
+        [ Color.Magenta,              Color.TextBg              ], // Magenta
+        [ Color.Pink,                 Color.TextBg              ], // Pink
 
-        [ Color.LightRed,             Color.TextBg     ], // LightRed
-        [ Color.LightRedOrange,       Color.TextBg     ], // LightRedOrange
-        [ Color.LightOrange,          Color.TextBg     ], // LightOrange
-        [ Color.LightYellow,          Color.TextBg     ], // LightYellow
-        [ Color.LightYuck,            Color.TextBg     ], // LightYuck
-        [ Color.LightGreen,           Color.TextBg     ], // LightGreen
-        [ Color.LightTeal,            Color.TextBg     ], // LightTeal
-        [ Color.LightBlue,            Color.TextBg     ], // LightBlue
-        [ Color.LightDeepBlue,        Color.TextBg     ], // LightDeepBlue
-        [ Color.LightPurple,          Color.TextBg     ], // LightPurple
-        [ Color.LightMagenta,         Color.TextBg     ], // LightMagenta
-        [ Color.LightPink,            Color.TextBg     ], // LightPink
+        [ Color.LightRed,             Color.LightRed            ], // LightRed
+        [ Color.LightRedOrange,       Color.LightRedOrange      ], // LightRedOrange
+        [ Color.LightOrange,          Color.LightOrange         ], // LightOrange
+        [ Color.LightYellow,          Color.LightYellow         ], // LightYellow
+        [ Color.LightYuck,            Color.LightYuck           ], // LightYuck
+        [ Color.LightGreen,           Color.LightGreen          ], // LightGreen
+        [ Color.LightTeal,            Color.LightTeal           ], // LightTeal
+        [ Color.LightBlue,            Color.LightBlue           ], // LightBlue
+        [ Color.LightDeepBlue,        Color.LightDeepBlue       ], // LightDeepBlue
+        [ Color.LightPurple,          Color.LightPurple         ], // LightPurple
+        [ Color.LightMagenta,         Color.LightMagenta        ], // LightMagenta
+        [ Color.LightPink,            Color.LightPink           ], // LightPink
 
-        [ Color.DarkRed,              Color.TextBg     ], // DarkRed
-        [ Color.DarkRedOrange,        Color.TextBg     ], // DarkRedOrange
-        [ Color.DarkOrange,           Color.TextBg     ], // DarkOrange
-        [ Color.DarkYellow,           Color.TextBg     ], // DarkYellow
-        [ Color.DarkYuck,             Color.TextBg     ], // DarkYuck
-        [ Color.DarkGreen,            Color.TextBg     ], // DarkGreen
-        [ Color.DarkTeal,             Color.TextBg     ], // DarkTeal
-        [ Color.DarkBlue,             Color.TextBg     ], // DarkBlue
-        [ Color.DarkDeepBlue,         Color.TextBg     ], // DarkDeepBlue
-        [ Color.DarkPurple,           Color.TextBg     ], // DarkPurple
-        [ Color.DarkMagenta,          Color.TextBg     ], // DarkMagenta
-        [ Color.DarkPink,             Color.TextBg     ], // DarkPink
+        [ Color.DarkRed,              Color.DarkRed             ], // DarkRed
+        [ Color.DarkRedOrange,        Color.DarkRedOrange       ], // DarkRedOrange
+        [ Color.DarkOrange,           Color.DarkOrange          ], // DarkOrange
+        [ Color.DarkYellow,           Color.DarkYellow          ], // DarkYellow
+        [ Color.DarkYuck,             Color.DarkYuck            ], // DarkYuck
+        [ Color.DarkGreen,            Color.DarkGreen           ], // DarkGreen
+        [ Color.DarkTeal,             Color.DarkTeal            ], // DarkTeal
+        [ Color.DarkBlue,             Color.DarkBlue            ], // DarkBlue
+        [ Color.DarkDeepBlue,         Color.DarkDeepBlue        ], // DarkDeepBlue
+        [ Color.DarkPurple,           Color.DarkPurple          ], // DarkPurple
+        [ Color.DarkMagenta,          Color.DarkMagenta         ], // DarkMagenta
+        [ Color.DarkPink,             Color.DarkPink            ], // DarkPink
 
-        [ Color.Grass,                Color.TextBg     ], // Grass
-        [ Color.GrassDark,            Color.TextBg     ], // GrassDark
-        [ Color.Wood,                 Color.TextBg     ], // Wood
-        [ Color.WoodDark,             Color.TextBg     ], // WoodDark
-        [ Color.VolcanoStone,         Color.TextBg     ], // VolcanoStone
-        [ Color.VolcanoStoneDark,     Color.TextBg     ], // VolcanoStoneDark
-        [ Color.Lava,                 Color.TextBg     ], // Lava
-        [ Color.LavaDark,             Color.TextBg     ], // LavaDark
-        [ Color.Snow,                 Color.TextBg     ], // Snow
-        [ Color.SnowDark,             Color.TextBg     ], // SnowDark
-        [ Color.Ice,                  Color.TextBg     ], // Ice
-        [ Color.IceDark,              Color.TextBg     ], // IceDark
-        [ Color.MagicWaste,           Color.TextBg     ], // MagicWaste
-        [ Color.MagicWasteDark,       Color.TextBg     ], // MagicWasteDark
-        [ Color.MagicWasteDetail,     Color.TextBg     ], // MagicWasteDetail
-        [ Color.MagicWasteDetailDark, Color.TextBg     ], // MagicWasteDetailDark
-        [ Color.Sand,                 Color.TextBg     ], // Sand
-        [ Color.SandDark,             Color.TextBg     ], // SandDark
-        [ Color.Cactus,               Color.TextBg     ], // Cactus
-        [ Color.CactusDark,           Color.TextBg     ], // CactusDark
-        [ Color.Stone,                Color.TextBg     ], // Stone
-        [ Color.StoneDark,            Color.TextBg     ], // StoneDark
+        [ Color.Grass,                Color.Grass               ], // Grass
+        [ Color.GrassDark,            Color.GrassDark           ], // GrassDark
+        [ Color.Wood,                 Color.Wood                ], // Wood
+        [ Color.WoodDark,             Color.WoodDark            ], // WoodDark
+        [ Color.VolcanoStone,         Color.VolcanoStone        ], // VolcanoStone
+        [ Color.VolcanoStoneDark,     Color.VolcanoStoneDark    ], // VolcanoStoneDark
+        [ Color.Lava,                 Color.Lava                ], // Lava
+        [ Color.LavaDark,             Color.LavaDark            ], // LavaDark
+        [ Color.Snow,                 Color.Snow                ], // Snow
+        [ Color.SnowDark,             Color.SnowDark            ], // SnowDark
+        [ Color.Ice,                  Color.Ice                 ], // Ice
+        [ Color.IceDark,              Color.IceDark             ], // IceDark
+        [ Color.MagicWaste,           Color.MagicWaste          ], // MagicWaste
+        [ Color.MagicWasteDark,       Color.MagicWasteDark      ], // MagicWasteDark
+        [ Color.MagicWasteDetail,     Color.MagicWasteDetail    ], // MagicWasteDetail
+        [ Color.MagicWasteDetailDark, Color.MagicWasteDetailDark], // MagicWasteDetailDark
+        [ Color.Sand,                 Color.Sand                ], // Sand
+        [ Color.SandDark,             Color.SandDark            ], // SandDark
+        [ Color.Cactus,               Color.Cactus              ], // Cactus
+        [ Color.CactusDark,           Color.CactusDark          ], // CactusDark
+        [ Color.Stone,                Color.Stone               ], // Stone
+        [ Color.StoneDark,            Color.StoneDark           ], // StoneDark
     ];
 
     public static readonly Dictionary<Highlight, (ColorPair pair, uint attr)> HighlightDefs = new() {
-        { Highlight.Text,                       (ColorPair.Text,                   0)},
-        { Highlight.TextSel,                    (ColorPair.TextSel,                0)},
-        { Highlight.TextSelUnderline,           (ColorPair.TextSel,                CursesAttribute.UNDERLINE) },
-        { Highlight.TextWarning,                (ColorPair.Warning,                0)},
-        { Highlight.TextWarningSel,             (ColorPair.WarningSel,             0)},
-        { Highlight.TextWarningSelUnderline,    (ColorPair.WarningSel,             0)},
-        { Highlight.TextError,                  (ColorPair.Error,                  0)},
-        { Highlight.TextBold,                   (ColorPair.Bold,                   CursesAttribute.BOLD)},
-        { Highlight.TextBoldSel,                (ColorPair.BoldSel,                CursesAttribute.BOLD)},
-        { Highlight.TextBoldSelUnderline,       (ColorPair.BoldSel,                CursesAttribute.BOLD | CursesAttribute.UNDERLINE)},
-        { Highlight.TextDim,                    (ColorPair.Dim,                    0)},
-        { Highlight.TextHidden,                 (ColorPair.Hidden,                 CursesAttribute.DIM)},
-        { Highlight.TextWhite,                  (ColorPair.White,                  0)},
-        { Highlight.TextLightGray,              (ColorPair.LightGray,              0)},
-        { Highlight.TextDarkGray,               (ColorPair.DarkGray,               0)},
-        { Highlight.TextBlack,                  (ColorPair.Black,                  0)},
-        { Highlight.TextEmphasisRed,            (ColorPair.EmphasisRed,            CursesAttribute.BOLD)},
-        { Highlight.TextEmphasisGreen,          (ColorPair.EmphasisGreen,          CursesAttribute.BOLD)},
-        { Highlight.TextEmphasisBlue,           (ColorPair.EmphasisBlue,           CursesAttribute.BOLD)},
+        { Highlight.Text,                   (ColorPair.Text,                   0)},
+        { Highlight.TextSel,                (ColorPair.TextSel,                0)},
+        { Highlight.TextSelUnderline,       (ColorPair.TextSel,                CursesAttribute.UNDERLINE) },
+        { Highlight.TextWarning,            (ColorPair.Warning,                0)},
+        { Highlight.TextWarningSel,         (ColorPair.WarningSel,             0)},
+        { Highlight.TextWarningSelUnderline,(ColorPair.WarningSel,             0)},
+        { Highlight.TextError,              (ColorPair.Error,                  0)},
+        { Highlight.TextBold,               (ColorPair.Bold,                   CursesAttribute.BOLD)},
+        { Highlight.TextBoldSel,            (ColorPair.BoldSel,                CursesAttribute.BOLD)},
+        { Highlight.TextBoldSelUnderline,   (ColorPair.BoldSel,                CursesAttribute.BOLD | CursesAttribute.UNDERLINE)},
+        { Highlight.TextDim,                (ColorPair.Dim,                    0)},
+        { Highlight.TextHidden,             (ColorPair.Hidden,                 CursesAttribute.DIM)},
+        { Highlight.TextWhite,              (ColorPair.White,                  0)},
+        { Highlight.TextLightGray,          (ColorPair.LightGray,              0)},
+        { Highlight.TextDarkGray,           (ColorPair.DarkGray,               0)},
+        { Highlight.TextBlack,              (ColorPair.Black,                  0)},
+        { Highlight.TextEmphasisRed,        (ColorPair.EmphasisRed,            CursesAttribute.BOLD)},
+        { Highlight.TextEmphasisGreen,      (ColorPair.EmphasisGreen,          CursesAttribute.BOLD)},
+        { Highlight.TextEmphasisBlue,       (ColorPair.EmphasisBlue,           CursesAttribute.BOLD)},
         { Highlight.Red,                    (ColorPair.Red,                    0)},
         { Highlight.RedOrange,              (ColorPair.RedOrange,              0)},
         { Highlight.Orange,                 (ColorPair.Orange,                 0)},
@@ -466,25 +466,25 @@ public static class ColorHandler {
         { Highlight.DarkPink,               (ColorPair.DarkPink,               0)},
 
         { Highlight.Grass,                  (ColorPair.Grass,                  0)},
-        { Highlight.GrassDark,            (ColorPair.GrassDark,            0)},
+        { Highlight.GrassDark,              (ColorPair.GrassDark,              0)},
         { Highlight.Wood,                   (ColorPair.Wood,                   0)},
-        { Highlight.WoodDark,             (ColorPair.WoodDark,             0)},
+        { Highlight.WoodDark,               (ColorPair.WoodDark,               0)},
         { Highlight.VolcanoStone,           (ColorPair.VolcanoStone,           0)},
-        { Highlight.VolcanoStoneDark,     (ColorPair.VolcanoStoneDark,     0)},
+        { Highlight.VolcanoStoneDark,       (ColorPair.VolcanoStoneDark,       0)},
         { Highlight.Snow,                   (ColorPair.Snow,                   0)},
-        { Highlight.SnowDark,             (ColorPair.SnowDark,             0)},
+        { Highlight.SnowDark,               (ColorPair.SnowDark,               0)},
         { Highlight.Ice,                    (ColorPair.Ice,                    0)},
-        { Highlight.IceDark,              (ColorPair.IceDark,              0)},
+        { Highlight.IceDark,                (ColorPair.IceDark,                0)},
         { Highlight.MagicWaste,             (ColorPair.MagicWaste,             0)},
-        { Highlight.MagicWasteDark,       (ColorPair.MagicWasteDark,       0)},
+        { Highlight.MagicWasteDark,         (ColorPair.MagicWasteDark,         0)},
         { Highlight.MagicWasteDetail,       (ColorPair.MagicWasteDetail,       0)},
-        { Highlight.MagicWasteDetailDark, (ColorPair.MagicWasteDetailDark, 0)},
+        { Highlight.MagicWasteDetailDark,   (ColorPair.MagicWasteDetailDark,   0)},
         { Highlight.Sand,                   (ColorPair.Sand,                   0)},
-        { Highlight.SandDark,             (ColorPair.SandDark,             0)},
+        { Highlight.SandDark,               (ColorPair.SandDark,               0)},
         { Highlight.Cactus,                 (ColorPair.Cactus,                 0)},
-        { Highlight.CactusDark,           (ColorPair.CactusDark,           0)},
+        { Highlight.CactusDark,             (ColorPair.CactusDark,             0)},
         { Highlight.Stone,                  (ColorPair.Stone,                  0)},
-        { Highlight.StoneDark,            (ColorPair.StoneDark,            0)},
+        { Highlight.StoneDark,              (ColorPair.StoneDark,              0)},
     };
 
     // Gets the pair number
