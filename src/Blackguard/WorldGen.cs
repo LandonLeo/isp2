@@ -73,10 +73,37 @@ public class WorldGen {
                 int cy = (int)(rand.NextSingle() * Chunk.CHUNKSIZE);
 
                 if ((position.X + position.Y) % 2 == 0) {
-                    ret.Tiles[cx, cy] = new Tile(Registry.GetDefinition<Stone>(), true);
+                    if (change < .2) {
+                    ret.Tiles[cx, cy] = new Tile(Registry.GetDefinition<Ice>(), true);
+                    } else if (change < .4) {
+                        ret.Tiles[cx, cy] = new Tile(Registry.GetDefinition<MagicWasteDetail>(), true);
 
-                }else
-                    ret.Tiles[cx, cy] = new Tile(Registry.GetDefinition<StoneDark>(), true);
+                    } else if (change < .6) {
+                        ret.Tiles[cx, cy] = new Tile(Registry.GetDefinition<Wood>(), true);
+
+                    } else if (change < .8) {
+                        ret.Tiles[cx, cy] = new Tile(Registry.GetDefinition<Cactus>(), true);
+
+                    } else {
+                        ret.Tiles[cx, cy] = new Tile(Registry.GetDefinition<Lava>(), true);
+                    }
+
+                }else {
+                   if (change < .2) {
+                    ret.Tiles[cx, cy] = new Tile(Registry.GetDefinition<IceDark>(), true);
+                    } else if (change < .4) {
+                        ret.Tiles[cx, cy] = new Tile(Registry.GetDefinition<MagicWasteDetailDark>(), true);
+
+                    } else if (change < .6) {
+                        ret.Tiles[cx, cy] = new Tile(Registry.GetDefinition<WoodDark>(), true);
+
+                    } else if (change < .8) {
+                        ret.Tiles[cx, cy] = new Tile(Registry.GetDefinition<CactusDark>(), true);
+
+                    } else {
+                        ret.Tiles[cx, cy] = new Tile(Registry.GetDefinition<LavaDark>(), true);
+                    }
+            }
             }
         return ret;
     }
