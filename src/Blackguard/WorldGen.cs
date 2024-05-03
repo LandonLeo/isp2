@@ -15,6 +15,8 @@ public class WorldGen {
     public Chunk GenChunk(Point position) {
         Chunk ret = new(position);
 
+        for (int k = 0; k < 10; k++) {
+
         float change = rand.NextSingle();
 
         // TODO: Actual noise-based worldgen
@@ -105,6 +107,8 @@ public class WorldGen {
                     }
             }
             }
+
+    }
         return ret;
     }
 }
