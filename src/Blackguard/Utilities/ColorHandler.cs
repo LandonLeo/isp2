@@ -10,7 +10,6 @@ public enum Color : short {
     TextQuiet,
     TextQuieter,
     TextQuietest,
-
     White,
     Gray90,
     Gray80,
@@ -22,7 +21,6 @@ public enum Color : short {
     Gray20,
     Gray10,
     Black,
-
     Red,
     Rorange,
     Orange,
@@ -35,7 +33,6 @@ public enum Color : short {
     Purple,
     Magenta,
     Pink,
-
     LightRed,
     LightRorange,
     LightOrange,
@@ -48,9 +45,8 @@ public enum Color : short {
     LightPurple,
     LightMagenta,
     LightPink,
-
     DarkRed,
-    DarkRorange,
+    DarkRedOrange,
     DarkOrange,
     DarkYellow,
     DarkYuck,
@@ -61,13 +57,83 @@ public enum Color : short {
     DarkPurple,
     DarkMagenta,
     DarkPink,
+    Grass,
+    GrassDark,
+    Wood,
+    WoodDark,
+    VolcanoStone,
+    VolcanoStoneDark,
+    Lava,
+    LavaDark,
+    Snow,
+    SnowDark,
+    Ice,
+    IceDark,
+    MagicWaste,
+    MagicWasteDark,
+    MagicWasteDetail,
+    MagicWasteDetailDark,
+    Sand,
+    SandDark,
+    Cactus,
+    CactusDark,
+    Stone,
+    StoneDark,
 }
 
-public enum ColorPair : uint {
+public enum ColorPair {
     Text = 1,
     TextSel,
     Warning,
+    WarningSel,
     Error,
+    Bold,
+    BoldSel,
+    Dim,
+    Hidden,
+    White,
+    LightGray,
+    DarkGray,
+    Black,
+    EmphasisRed,
+    EmphasisGreen,
+    EmphasisBlue,
+    Red,
+    RedOrange,
+    Orange,
+    Yellow,
+    Yuck,
+    Green,
+    Teal,
+    Blue,
+    DeepBlue,
+    Purple,
+    Magenta,
+    Pink,
+    LightRed,
+    LightRedOrange,
+    LightOrange,
+    LightYellow,
+    LightYuck,
+    LightGreen,
+    LightTeal,
+    LightBlue,
+    LightDeepBlue,
+    LightPurple,
+    LightMagenta,
+    LightPink,
+    DarkRed,
+    DarkRedOrange,
+    DarkOrange,
+    DarkYellow,
+    DarkYuck,
+    DarkGreen,
+    DarkTeal,
+    DarkBlue,
+    DarkDeepBlue,
+    DarkPurple,
+    DarkMagenta,
+    DarkPink,
     Grass,
     Grass2,
     Sand,
@@ -80,7 +146,7 @@ public enum ColorPair : uint {
     Lava2,
     Dirt,
     Stone,
-    Mana,
+    StoneShadow,
 }
 
 public enum Highlight {
@@ -88,7 +154,57 @@ public enum Highlight {
     TextSel,
     TextSelUnderline,
     TextWarning,
+    TextWarningSel,
+    TextWarningSelUnderline,
     TextError,
+    TextBold,
+    TextBoldSel,
+    TextBoldSelUnderline,
+    TextDim,
+    TextHidden,
+    TextWhite,
+    TextLightGray,
+    TextDarkGray,
+    TextBlack,
+    TextEmphasisRed,
+    TextEmphasisGreen,
+    TextEmphasisBlue,
+    Red,
+    RedOrange,
+    Orange,
+    Yellow,
+    Yuck,
+    Green,
+    Teal,
+    Blue,
+    DeepBlue,
+    Purple,
+    Magenta,
+    Pink,
+    LightRed,
+    LightRedOrange,
+    LightOrange,
+    LightYellow,
+    LightYuck,
+    LightGreen,
+    LightTeal,
+    LightBlue,
+    LightDeepBlue,
+    LightPurple,
+    LightMagenta,
+    LightPink,
+    DarkRed,
+    DarkRedOrange,
+    DarkOrange,
+    DarkYellow,
+    DarkYuck,
+    DarkGreen,
+    DarkTeal,
+    DarkBlue,
+    DarkDeepBlue,
+    DarkPurple,
+    DarkMagenta,
+    DarkPink,
     Grass,
     Grass2,
     Sand,
@@ -101,8 +217,9 @@ public enum Highlight {
     Lava2,
     Dirt,
     Stone,
-    Mana,
+    StoneShadow,
 }
+
 
 public static class ColorHandler {
     // Color definitions, aligned with the Colors enum, so the 0th element is the RGB set for Text
@@ -154,7 +271,7 @@ public static class ColorHandler {
         [ 255, 153, 203 ],  // LightPink
 
         [ 153, 31,  31  ],  // DarkRed
-        [ 153, 57,  31  ],  // DarkRorange
+        [ 153, 57,  31  ],  // DarkRedOrange
         [ 153, 76,  31  ],  // DarkOrange
         [ 153, 124, 31  ],  // DarkYellow
         [ 113, 153, 31  ],  // DarkYuck
@@ -165,6 +282,29 @@ public static class ColorHandler {
         [ 95,  31,  153 ],  // DarkPurple
         [ 147, 31,  153 ],  // DarkMagenta
         [ 153, 31,  91  ],  // DarkPink
+
+        [  84, 140,  59 ],  // Grass
+        [  53, 111,  63 ],  // GrassDark
+        [ 124,  87,  58 ],  // Wood
+        [  98,  64,  50 ],  // WoodDark
+        [ 139, 109, 104 ],  // VolcanoStone
+        [ 116,  94,  97 ],  // VolcanoStoneDark
+        [ 243,  97,  18 ],  // Lava
+        [ 216,  48,  22 ],  // LavaDark
+        [ 217, 225, 228 ],  // Snow
+        [ 182, 185, 199 ],  // SnowDark
+        [ 177, 208, 237 ],  // Ice
+        [ 169, 178, 220 ],  // IceDark
+        [ 186, 154, 181 ],  // MagicWaste
+        [ 154, 130, 154 ],  // MagicWasteDark
+        [ 194, 123, 160 ],  // MagicWasteDetail
+        [ 155, 103, 141 ],  // MagicWasteDetailDark
+        [ 246, 178, 107 ],  // Sand
+        [ 199, 145, 109 ],  // SandDark
+        [ 110, 138, 102 ],  // Cactus
+        [  87, 112,  97 ],  // CactusDark
+        [ 121, 123, 132 ],  // Stone
+        [  98,  96, 100 ],  // StoneDark
     ];
 
     public static readonly Color[][] ColorPairDefs = [
@@ -178,7 +318,7 @@ public static class ColorHandler {
         [ Color.Yellow,        Color.Yellow         ], // Sand2
         [ Color.White,         Color.White          ], // Snow
         [ Color.Gray90,        Color.Gray90         ], // Snow2
-        [ Color.DarkRorange,   Color.DarkRorange    ], // Waste
+        [ Color.DarkRedOrange,   Color.DarkRedOrange    ], // Waste
         [ Color.DarkRed,       Color.DarkRed     ], // Waste2
         [ Color.LightRorange,  Color.LightRorange   ], // Lava
         [ Color.Rorange,       Color.Rorange        ], // Lava2
@@ -205,7 +345,7 @@ public static class ColorHandler {
         { Highlight.Lava2,            (ColorPair.Lava2,   0 )},
         { Highlight.Dirt,             (ColorPair.Dirt,    0 )},
         { Highlight.Stone,            (ColorPair.Stone,   0 )},
-        { Highlight.Mana,             (ColorPair.Mana,    0 )}
+        { Highlight.StoneShadow,      (ColorPair.StoneShadow,0 )}
     };
 
     // Gets the pair number

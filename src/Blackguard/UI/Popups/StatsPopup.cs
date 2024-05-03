@@ -18,8 +18,8 @@ public class StatsPopup : Popup {
         Panel.DrawBorder(Highlight.Text);
 
         Panel.AddLinesWithHighlight(
-            (Highlight.TextWarning, 1, 1, $"Health: {(int)_player.Health}/{_player.MaxHealth}".Pad(28)),
-            (Highlight.Mana, 1, 2, $"Mana: {(int)_player.Mana}/{_player.MaxMana}".Pad(28))
+            (Highlight.Red, 1, 1, $"Health: {(int)_player.Health}/{_player.MaxHealth}".Pad(28)),
+            (Highlight.Purple, 1, 2, $"Mana: {(int)_player.Mana}/{_player.MaxMana}".Pad(28))
         );
     }
 
