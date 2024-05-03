@@ -85,7 +85,7 @@ public class WorldGen {
                         ret.Tiles[cx, cy] = new Tile(Registry.GetDefinition<Cactus>(), true);
 
                     } else {
-                        ret.Tiles[cx, cy] = new Tile(Registry.GetDefinition<Stone>(), true);
+                        ret.Tiles[cx, cy] = new Tile(Registry.GetDefinition<Lava>(), true);
                     }
 
                 }else {

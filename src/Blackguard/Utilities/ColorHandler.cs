@@ -471,6 +471,8 @@ public static class ColorHandler {
         { Highlight.WoodDark,               (ColorPair.WoodDark,               0)},
         { Highlight.VolcanoStone,           (ColorPair.VolcanoStone,           0)},
         { Highlight.VolcanoStoneDark,       (ColorPair.VolcanoStoneDark,       0)},
+        { Highlight.Lava,                   (ColorPair.Lava,                   0)},
+        { Highlight.LavaDark,               (ColorPair.LavaDark,               0)},
         { Highlight.Snow,                   (ColorPair.Snow,                   0)},
         { Highlight.SnowDark,               (ColorPair.SnowDark,               0)},
         { Highlight.Ice,                    (ColorPair.Ice,                    0)},
