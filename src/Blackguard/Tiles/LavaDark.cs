@@ -5,7 +5,7 @@ namespace Blackguard.Tiles;
 public class LavaDark : TileDefinition {
     public LavaDark() {
         Name = "Lava2";
-        Glyph = '#';
+        Glyph = '@';
         Highlight = Highlight.LavaDark;
     }
 }

@@ -5,7 +5,7 @@ namespace Blackguard.Tiles;
 public class Cactus : TileDefinition {
     public Cactus() {
         Name = "Cactus";
-        Glyph = '#';
+        Glyph = 'T';
         Highlight = Highlight.Cactus;
     }
 }

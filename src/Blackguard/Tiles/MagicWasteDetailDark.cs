@@ -5,7 +5,7 @@ namespace Blackguard.Tiles;
 public class MagicWasteDetailDark : TileDefinition {
     public MagicWasteDetailDark() {
         Name = "MagicWasteDetailDark";
-        Glyph = '#';
+        Glyph = '*';
         Highlight = Highlight.MagicWasteDetailDark;
     }
 }
