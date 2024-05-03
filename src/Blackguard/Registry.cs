@@ -7,7 +7,7 @@ namespace Blackguard;
 public static class Registry {
     public class Definition {
         public string Name = "Unknown";
-        public int Id => SumString(Name);
+        public int Id => Name.GetHashCode();
     }
 
     public class RegistryForType() {
@@ -30,15 +30,6 @@ public static class Registry {
                 reg.defsById.Add(instance.Id, instance);
             }
         }
-    }
-
-    private static int SumString(string s) {
-        int ret = 0;
-
-        foreach (char c in s)
-            ret += c;
-
-        return ret;
     }
 
     // These are very safe functions
