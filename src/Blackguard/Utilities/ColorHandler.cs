@@ -384,24 +384,24 @@ public static class ColorHandler {
 
         [ Color.Grass,                Color.Grass               ], // Grass
         [ Color.GrassDark,            Color.GrassDark           ], // GrassDark
-        [ Color.Grass,                Color.Wood                ], // Wood
-        [ Color.GrassDark,            Color.WoodDark            ], // WoodDark
+        [ Color.Wood,                 Color.Grass               ], // Wood
+        [ Color.WoodDark,             Color.GrassDark           ], // WoodDark
         [ Color.VolcanoStone,         Color.VolcanoStone        ], // VolcanoStone
         [ Color.VolcanoStoneDark,     Color.VolcanoStoneDark    ], // VolcanoStoneDark
-        [ Color.VolcanoStone,         Color.Lava                ], // Lava
-        [ Color.VolcanoStoneDark,     Color.LavaDark            ], // LavaDark
+        [ Color.Lava,                 Color.VolcanoStone        ], // Lava
+        [ Color.LavaDark,             Color.VolcanoStoneDark    ], // LavaDark
         [ Color.Snow,                 Color.Snow                ], // Snow
         [ Color.SnowDark,             Color.SnowDark            ], // SnowDark
-        [ Color.Snow,                 Color.Ice                 ], // Ice
-        [ Color.SnowDark,             Color.IceDark             ], // IceDark
+        [ Color.Ice,                  Color.Snow                ], // Ice
+        [ Color.IceDark,              Color.SnowDark            ], // IceDark
         [ Color.MagicWaste,           Color.MagicWaste          ], // MagicWaste
         [ Color.MagicWasteDark,       Color.MagicWasteDark      ], // MagicWasteDark
-        [ Color.MagicWaste,           Color.MagicWasteDetail    ], // MagicWasteDetail
-        [ Color.MagicWasteDark,       Color.MagicWasteDetailDark], // MagicWasteDetailDark
+        [ Color.MagicWasteDetail,     Color.MagicWaste          ], // MagicWasteDetail
+        [ Color.MagicWasteDetailDark, Color.MagicWasteDark      ], // MagicWasteDetailDark
         [ Color.Sand,                 Color.Sand                ], // Sand
         [ Color.SandDark,             Color.SandDark            ], // SandDark
-        [ Color.Sand,                 Color.Cactus              ], // Cactus
-        [ Color.SandDark,             Color.CactusDark          ], // CactusDark
+        [ Color.Cactus,               Color.Sand                ], // Cactus
+        [ Color.CactusDark,           Color.SandDark            ], // CactusDark
         [ Color.Stone,                Color.Stone               ], // Stone
         [ Color.StoneDark,            Color.StoneDark           ], // StoneDark
     ];
