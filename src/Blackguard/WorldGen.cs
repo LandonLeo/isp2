@@ -58,13 +58,6 @@ public class WorldGen {
                 if ((position.X + position.Y) % 2 == 0) {
                     ret.Tiles[i, j] = new Tile(Registry.GetDefinition<VolcanoStone>(), false);
 
-                    while (rand.NextSingle() > 0.5) {
-            int cx = (int)(rand.NextSingle() * Chunk.CHUNKSIZE);
-            int cy = (int)(rand.NextSingle() * Chunk.CHUNKSIZE);
-
-            ret.Tiles[cx, cy] = new Tile(Registry.GetDefinition<Lava>(), true);
-        }
-
                 }else
                     ret.Tiles[i, j] = new Tile(Registry.GetDefinition<VolcanoStoneDark>(), false);
             }
