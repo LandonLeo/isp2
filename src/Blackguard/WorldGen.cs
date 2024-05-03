@@ -70,7 +70,11 @@ public class WorldGen {
                 int cx = (int)(rand.NextSingle() * Chunk.CHUNKSIZE);
                 int cy = (int)(rand.NextSingle() * Chunk.CHUNKSIZE);
 
-                ret.Tiles[cx, cy] = new Tile(Registry.GetDefinition<Stone>(), true);
+                if ((position.X + position.Y) % 2 == 0) {
+                    ret.Tiles[cx, cy] = new Tile(Registry.GetDefinition<Stone>(), true);
+
+                }else
+                    ret.Tiles[cx, cy] = new Tile(Registry.GetDefinition<StoneDark>(), true);
             }
         return ret;
     }
