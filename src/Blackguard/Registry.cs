@@ -1,13 +1,25 @@
 using System;
 using System.Collections.Generic;
 using System.Reflection;
+using Blackguard.Utilities;
 
 namespace Blackguard;
 
 public static class Registry {
     public class Definition {
         public string Name = "Unknown";
-        public int Id => Name.GetHashCode();
+        private bool idSet = false;
+        private int _id;
+        public int Id {
+            get {
+                if (!idSet) {
+                    _id = Name.HashStable();
+                    idSet = true;
+                }
+
+                return _id;
+            }
+        }
     }
 
     public class RegistryForType() {
