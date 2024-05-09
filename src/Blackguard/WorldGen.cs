@@ -66,8 +66,6 @@ public class WorldGen {
                     ret.Tiles[i, j] = new Tile(Registry.GetDefinition<LavaRockDark>(), false);
             }
         }
-        
-        
         }
 
             while (rand.NextSingle() > 0.5) {
