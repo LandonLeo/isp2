@@ -133,6 +133,19 @@ public static class Utils {
         return s + new string(' ', w - s.Length);
     }
 
+    public static int HashStable(this string s) {
+        int hash = 0;
+
+        for (int i = 0; i < s.Length; i++) {
+            unchecked {
+                hash += s[i] * (int)Math.Pow(31, s.Length - i);
+                hash &= 0x7ffffff;
+            }
+        }
+
+        return hash;
+    }
+
     // If positive, then the two rectangles intersect
     public static float Intersect(float x1f, float y1f, int w1, int h1, float x2f, float y2f, int w2, int h2) {
         int x1 = (int)x1f;
