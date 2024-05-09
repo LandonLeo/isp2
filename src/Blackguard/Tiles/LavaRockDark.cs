@@ -2,9 +2,9 @@ using Blackguard.Utilities;
 
 namespace Blackguard.Tiles;
 
-public class VolcanoStoneDark : TileDefinition {
-    public VolcanoStoneDark() {
-        Name = "VolcanoStoneDark";
+public class LavaRockDark : TileDefinition {
+    public LavaRockDark() {
+        Name = "LavaRockDark";
         Glyph = '#';
         Highlight = Highlight.VolcanoStoneDark;
     }

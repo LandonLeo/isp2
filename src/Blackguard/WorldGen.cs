@@ -60,10 +60,10 @@ public class WorldGen {
             for (int i = 0; i < Chunk.CHUNKSIZE; i++) {
             for (int j = 0; j < Chunk.CHUNKSIZE; j++) {
                 if ((position.X + position.Y) % 2 == 0) {
-                    ret.Tiles[i, j] = new Tile(Registry.GetDefinition<VolcanoStone>(), false);
+                    ret.Tiles[i, j] = new Tile(Registry.GetDefinition<LavaRock>(), false);
 
                 }else
-                    ret.Tiles[i, j] = new Tile(Registry.GetDefinition<VolcanoStoneDark>(), false);
+                    ret.Tiles[i, j] = new Tile(Registry.GetDefinition<LavaRockDark>(), false);
             }
         }
         
