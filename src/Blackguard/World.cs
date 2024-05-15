@@ -67,7 +67,6 @@ public class World {
                 if (RandomNumberGenerator.GetInt32(11) < 2) {
                     int biome = RandomNumberGenerator.GetInt32(11);
                     ChunksByPosition.Add(position, Chunk.Deserialize(ChunksPath, position) ?? gen.GenChunk(position, biome));
-                    ChunksByPosition.Add(position+1, Chunk.Deserialize(ChunksPath, position+1) ?? gen.GenChunk(position+1, biome));
                 }else {
                     ChunksByPosition.Add(position, Chunk.Deserialize(ChunksPath, position) ?? gen.GenChunk(position, 5));
                     }
