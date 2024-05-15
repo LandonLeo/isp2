@@ -2,7 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Numerics;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+using System.Security.Cryptography;
 using Blackguard.Entities;
 using Blackguard.Tiles;
 using Blackguard.UI;
@@ -62,7 +64,10 @@ public class World {
                 Point position = new(center.X + i, center.Y + j);
 
                 if (!ChunksByPosition.ContainsKey(position))
-                    ChunksByPosition.Add(position, Chunk.Deserialize(ChunksPath, position) ?? gen.GenChunk(position));
+
+                
+
+                    ChunksByPosition.Add(position, Chunk.Deserialize(ChunksPath, position) ?? gen.GenChunk(position, RandomNumberGenerator.GetInt32(11)));
             }
         }
     }
