@@ -82,10 +82,6 @@ public class World {
                 Point position18 = new(center.X + i - 1, center.Y + j + 2);
                 Point position19 = new(center.X + i - 1, center.Y + j - 2);
                 Point position20 = new(center.X + i + 1, center.Y + j - 2);
-                Point position21 = new(center.X + i + 2, center.Y + j + 2);
-                Point position22 = new(center.X + i - 2, center.Y + j + 2);
-                Point position23 = new(center.X + i - 2, center.Y + j - 2);
-                Point position24 = new(center.X + i + 2, center.Y + j - 2);
                 
 
                 if (!ChunksByPosition.ContainsKey(position)) {
@@ -132,14 +128,6 @@ public class World {
                     ChunksByPosition.Add(position19, Chunk.Deserialize(ChunksPath, position19) ?? gen.GenChunk(position19, biome));
                     if (!ChunksByPosition.ContainsKey(position20))
                     ChunksByPosition.Add(position20, Chunk.Deserialize(ChunksPath, position20) ?? gen.GenChunk(position20, biome));
-                    if (!ChunksByPosition.ContainsKey(position21))
-                    ChunksByPosition.Add(position21, Chunk.Deserialize(ChunksPath, position21) ?? gen.GenChunk(position21, biome));
-                    if (!ChunksByPosition.ContainsKey(position22))
-                    ChunksByPosition.Add(position22, Chunk.Deserialize(ChunksPath, position22) ?? gen.GenChunk(position22, biome));
-                    if (!ChunksByPosition.ContainsKey(position23))
-                    ChunksByPosition.Add(position23, Chunk.Deserialize(ChunksPath, position23) ?? gen.GenChunk(position23, biome));
-                    if (!ChunksByPosition.ContainsKey(position24))
-                    ChunksByPosition.Add(position24, Chunk.Deserialize(ChunksPath, position24) ?? gen.GenChunk(position24, biome));
                 }else {
                     ChunksByPosition.Add(position, Chunk.Deserialize(ChunksPath, position) ?? gen.GenChunk(position, 5));
                     }
