@@ -62,7 +62,7 @@ public class World {
         for (int i = -simulationDistance.X; i <= simulationDistance.X; i++) {
             for (int j = -simulationDistance.Y; j <= simulationDistance.Y; j++) {
                 Point position = new(center.X + i, center.Y + j);
-                Point position1 = new(center.X + i +1, center.Y + j);
+                Point position1 = new(center.X + i + 1, center.Y + j);
                 Point position2 = new(center.X + i, center.Y + j + 1);
                 Point position3 = new(center.X + i - 1, center.Y + j);
                 Point position4 = new(center.X + i, center.Y + j - 1);
@@ -70,6 +70,23 @@ public class World {
                 Point position6 = new(center.X + i - 1, center.Y + j + 1);
                 Point position7 = new(center.X + i - 1, center.Y + j - 1);
                 Point position8 = new(center.X + i + 1, center.Y + j - 1);
+                Point position9 = new(center.X + i + 2, center.Y + j);
+                Point position10 = new(center.X + i, center.Y + j + 2);
+                Point position11 = new(center.X + i - 2, center.Y + j);
+                Point position12 = new(center.X + i, center.Y + j - 2);
+                Point position13 = new(center.X + i + 2, center.Y + j + 1);
+                Point position14 = new(center.X + i - 2, center.Y + j + 1);
+                Point position15 = new(center.X + i - 2, center.Y + j - 1);
+                Point position16 = new(center.X + i + 2, center.Y + j - 1);
+                Point position17 = new(center.X + i + 1, center.Y + j + 2);
+                Point position18 = new(center.X + i - 1, center.Y + j + 2);
+                Point position19 = new(center.X + i - 1, center.Y + j - 2);
+                Point position20 = new(center.X + i + 1, center.Y + j - 2);
+                Point position21 = new(center.X + i + 2, center.Y + j + 2);
+                Point position22 = new(center.X + i - 2, center.Y + j + 2);
+                Point position23 = new(center.X + i - 2, center.Y + j - 2);
+                Point position24 = new(center.X + i + 2, center.Y + j - 2);
+                
 
                 if (!ChunksByPosition.ContainsKey(position)) {
                 if (RandomNumberGenerator.GetInt32(11) < 2) {
@@ -91,6 +108,38 @@ public class World {
                     ChunksByPosition.Add(position7, Chunk.Deserialize(ChunksPath, position7) ?? gen.GenChunk(position7, biome));
                     if (!ChunksByPosition.ContainsKey(position8))
                     ChunksByPosition.Add(position8, Chunk.Deserialize(ChunksPath, position8) ?? gen.GenChunk(position8, biome));
+                    if (!ChunksByPosition.ContainsKey(position9))
+                    ChunksByPosition.Add(position9, Chunk.Deserialize(ChunksPath, position9) ?? gen.GenChunk(position9, biome));
+                    if (!ChunksByPosition.ContainsKey(position10))
+                    ChunksByPosition.Add(position10, Chunk.Deserialize(ChunksPath, position10) ?? gen.GenChunk(position10, biome));
+                    if (!ChunksByPosition.ContainsKey(position11))
+                    ChunksByPosition.Add(position11, Chunk.Deserialize(ChunksPath, position11) ?? gen.GenChunk(position11, biome));
+                    if (!ChunksByPosition.ContainsKey(position12))
+                    ChunksByPosition.Add(position12, Chunk.Deserialize(ChunksPath, position12) ?? gen.GenChunk(position12, biome));
+                    if (!ChunksByPosition.ContainsKey(position13))
+                    ChunksByPosition.Add(position13, Chunk.Deserialize(ChunksPath, position13) ?? gen.GenChunk(position13, biome));
+                    if (!ChunksByPosition.ContainsKey(position14))
+                    ChunksByPosition.Add(position14, Chunk.Deserialize(ChunksPath, position14) ?? gen.GenChunk(position14, biome));
+                    if (!ChunksByPosition.ContainsKey(position15))
+                    ChunksByPosition.Add(position15, Chunk.Deserialize(ChunksPath, position15) ?? gen.GenChunk(position15, biome));
+                    if (!ChunksByPosition.ContainsKey(position16))
+                    ChunksByPosition.Add(position16, Chunk.Deserialize(ChunksPath, position16) ?? gen.GenChunk(position16, biome));
+                    if (!ChunksByPosition.ContainsKey(position17))
+                    ChunksByPosition.Add(position17, Chunk.Deserialize(ChunksPath, position17) ?? gen.GenChunk(position17, biome));
+                    if (!ChunksByPosition.ContainsKey(position18))
+                    ChunksByPosition.Add(position18, Chunk.Deserialize(ChunksPath, position18) ?? gen.GenChunk(position18, biome));
+                    if (!ChunksByPosition.ContainsKey(position19))
+                    ChunksByPosition.Add(position19, Chunk.Deserialize(ChunksPath, position19) ?? gen.GenChunk(position19, biome));
+                    if (!ChunksByPosition.ContainsKey(position20))
+                    ChunksByPosition.Add(position20, Chunk.Deserialize(ChunksPath, position20) ?? gen.GenChunk(position20, biome));
+                    if (!ChunksByPosition.ContainsKey(position21))
+                    ChunksByPosition.Add(position21, Chunk.Deserialize(ChunksPath, position21) ?? gen.GenChunk(position21, biome));
+                    if (!ChunksByPosition.ContainsKey(position22))
+                    ChunksByPosition.Add(position22, Chunk.Deserialize(ChunksPath, position22) ?? gen.GenChunk(position22, biome));
+                    if (!ChunksByPosition.ContainsKey(position23))
+                    ChunksByPosition.Add(position23, Chunk.Deserialize(ChunksPath, position23) ?? gen.GenChunk(position23, biome));
+                    if (!ChunksByPosition.ContainsKey(position24))
+                    ChunksByPosition.Add(position24, Chunk.Deserialize(ChunksPath, position24) ?? gen.GenChunk(position24, biome));
                 }else {
                     ChunksByPosition.Add(position, Chunk.Deserialize(ChunksPath, position) ?? gen.GenChunk(position, 5));
                     }
