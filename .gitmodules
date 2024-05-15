@@ -4,3 +4,9 @@
 [submodule "src/PDCurses"]
 	path = src/PDCurses
 	url = https://github.com/ppebb/PDCurses
+[submodule "FastNoise2"]
+	path = FastNoise2
+	url = https://github.com/Auburn/FastNoise2
+[submodule "FastNoise2Bindings"]
+	path = FastNoise2Bindings
+	url = https://github.com/Auburn/FastNoise2Bindings
