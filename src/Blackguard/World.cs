@@ -64,8 +64,9 @@ public class World {
                 Point position = new(center.X + i, center.Y + j);
 
                 if (!ChunksByPosition.ContainsKey(position)) {
-                if (RandomNumberGenerator.GetInt32(11) < 2) {
+                if ((RandomNumberGenerator.GetInt32(11) < 2) && !ChunksByPosition.ContainsKey(position+1)) {
                     ChunksByPosition.Add(position, Chunk.Deserialize(ChunksPath, position) ?? gen.GenChunk(position, RandomNumberGenerator.GetInt32(11)));
+                    ChunksByPosition.Add(position+1, Chunk.Deserialize(ChunksPath, position+1) ?? gen.GenChunk(position+1, RandomNumberGenerator.GetInt32(11)));
                 }else {
                     ChunksByPosition.Add(position, Chunk.Deserialize(ChunksPath, position) ?? gen.GenChunk(position, 5));
                     }
