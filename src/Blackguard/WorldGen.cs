@@ -20,7 +20,7 @@ public class WorldGen {
         float change = rand.NextSingle();
 
         // TODO: Actual noise-based worldgen
-        if (change < .2) {
+        if (position.X < 100 && position.Y < 100) {
         for (int i = 0; i < Chunk.CHUNKSIZE; i++) {
             for (int j = 0; j < Chunk.CHUNKSIZE; j++) {
                 if ((position.X + position.Y) % 2 == 0)
@@ -29,7 +29,7 @@ public class WorldGen {
                     ret.Tiles[i, j] = new Tile(Registry.GetDefinition<SnowDark>(), false);
             }
         }
-        } else if (change < .4) {
+        } else if (position.X < 200 && position.Y < 200) {
             for (int i = 0; i < Chunk.CHUNKSIZE; i++) {
             for (int j = 0; j < Chunk.CHUNKSIZE; j++) {
                 if ((position.X + position.Y) % 2 == 0)
@@ -38,7 +38,7 @@ public class WorldGen {
                     ret.Tiles[i, j] = new Tile(Registry.GetDefinition<MagicWasteDark>(), false);
             }
         }
-        } else if (change < .6) {
+        } else if (position.X < 300 && position.Y < 300) {
             for (int i = 0; i < Chunk.CHUNKSIZE; i++) {
             for (int j = 0; j < Chunk.CHUNKSIZE; j++) {
                 if ((position.X + position.Y) % 2 == 0)
@@ -47,7 +47,7 @@ public class WorldGen {
                     ret.Tiles[i, j] = new Tile(Registry.GetDefinition<GrassDark>(), false);
             }
         }
-        } else if (change < .8) {
+        } else if (position.X < 400 && position.Y < 400) {
             for (int i = 0; i < Chunk.CHUNKSIZE; i++) {
             for (int j = 0; j < Chunk.CHUNKSIZE; j++) {
                 if ((position.X + position.Y) % 2 == 0)
