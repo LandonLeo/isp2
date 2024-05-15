@@ -66,6 +66,10 @@ public class World {
                 Point position2 = new(center.X + i, center.Y + j + 1);
                 Point position3 = new(center.X + i - 1, center.Y + j);
                 Point position4 = new(center.X + i, center.Y + j - 1);
+                Point position5 = new(center.X + i + 1, center.Y + j + 1);
+                Point position6 = new(center.X + i - 1, center.Y + j + 1);
+                Point position7 = new(center.X + i - 1, center.Y + j - 1);
+                Point position8 = new(center.X + i + 1, center.Y + j - 1);
 
                 if (!ChunksByPosition.ContainsKey(position)) {
                 if (RandomNumberGenerator.GetInt32(11) < 2) {
@@ -79,6 +83,14 @@ public class World {
                     ChunksByPosition.Add(position3, Chunk.Deserialize(ChunksPath, position3) ?? gen.GenChunk(position3, biome));
                     if (!ChunksByPosition.ContainsKey(position4))
                     ChunksByPosition.Add(position4, Chunk.Deserialize(ChunksPath, position4) ?? gen.GenChunk(position4, biome));
+                    if (!ChunksByPosition.ContainsKey(position5))
+                    ChunksByPosition.Add(position5, Chunk.Deserialize(ChunksPath, position5) ?? gen.GenChunk(position5, biome));
+                    if (!ChunksByPosition.ContainsKey(position6))
+                    ChunksByPosition.Add(position6, Chunk.Deserialize(ChunksPath, position6) ?? gen.GenChunk(position6, biome));
+                    if (!ChunksByPosition.ContainsKey(position7))
+                    ChunksByPosition.Add(position7, Chunk.Deserialize(ChunksPath, position7) ?? gen.GenChunk(position7, biome));
+                    if (!ChunksByPosition.ContainsKey(position8))
+                    ChunksByPosition.Add(position8, Chunk.Deserialize(ChunksPath, position8) ?? gen.GenChunk(position8, biome));
                 }else {
                     ChunksByPosition.Add(position, Chunk.Deserialize(ChunksPath, position) ?? gen.GenChunk(position, 5));
                     }
